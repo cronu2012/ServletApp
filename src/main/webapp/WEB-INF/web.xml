@@ -4,4 +4,22 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+
+  <servlet>
+    <servlet-name>FirstServlet</servlet-name>
+    <servlet-class>com.steven.FirstServlet</servlet-class>
+    <init-param>
+      <param-name>message</param-name>
+      <param-value>Hello World</param-value>
+    </init-param>
+    <init-param>
+      <param-name>encoding</param-name>
+      <param-value>utf-8</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FirstServlet</servlet-name>
+    <url-pattern>/servlet/first-servlet</url-pattern>
+  </servlet-mapping>
 </web-app>
